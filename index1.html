@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Medical Prescription</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 AI Medical Prescription Generator</h1>
+    <input type="text" id="diseaseInput" placeholder="Enter your disease..." />
+    <button onclick="generatePrescription()">Generate Prescription</button>
+    
+    <div id="result" class="card">
+      <h2>Prescription:</h2>
+      <ul id="medicineList"></ul>
+      <h2>Nearest Hospital:</h2>
+      <p id="hospitalName"></p>
+      <button id="mapsBtn" onclick="redirectToMap()">View on Google Maps</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
